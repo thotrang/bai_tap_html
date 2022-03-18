@@ -7,7 +7,40 @@
     <title>tạo link </title>
 </head>
 <body>
-    <a href="http://google.com">link google</a>
-<!-- sử dụng thẻ a:link -->
+    <a href="#1">tạo link</a>
+    <a href="#2">tạo ancor link</a>
+    <h3 id="1">1. Tạo link liên kết</h3>
+    <!-- sử dụng thẻ a:link -->
+
+    <pre>
+            <a href="http://google.com" title="mở liên kết google" target="_blank">google với blank</a>
+            <a href="http://google.com" title="mở liên kết google" target="_self">google với self</a>
+            <a href="http://google.com" title="mở liên kết google" target="_top">google với top</a>
+            <a href="http://google.com" title="mở liên kết google" target="_parent">google với parent</a>
+    </pre>
+    <p>
+        thẻ tạo link có 3 thuộc tính chính
+        <ol>
+            <li>href là địa chỉ liên kết</li>
+            <li>titel chú thích, tiêu đề cho địa chỉ liên kết</li>
+            <li>target để xác định nơi mở tài liệu: <ul>
+                <li>_blank mở ở trang mới</li>   
+                <li>_self mở ở trang hiện tại</li>  
+                <li>_top mở tài liệu trong nội dung trang hiện tại</li>   
+                <li>_parent mở tài liệu trên khung trình duyệt mẹ của nó</li>
+            </ul></li>  
+
+        </ol>
+    </p>
+    <h3 id="2">2. ancor link(liên kết neo)</h3>
+    <p>Liên kết neo nghĩa là một liên kết trong siêu văn bản sẽ dẫn đến một vị trí đặc biệt trong cùng tài liệu mà không phải tải lại hoặc mở một tài liệu mới</p>
+    <p>chia làm 2 phần
+        <ul>
+            <li>Khu vực được neo, được khai báo bằng thẻ bất kỳ với thuộc tính id (ví dụ:<p id="noi-dung"> </p>)</li>
+            <li>Liên kết neo, được khai báo bằng thẻ <a> nhưng có thuộc tính là href 
+                nhưng giá trị là có dấu # và tên id của khu vực cần truy cập đến (ví dụ: <a href="#noi-dung">xem nội dung</a>)</li>
+        </ul>
+    </p>
+
 </body>
 </html>
