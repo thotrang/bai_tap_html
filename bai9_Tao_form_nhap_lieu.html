@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form nhập liệu</title>
+</head>
+<body>
+<p>các thuộc tính của input gồm: <ul>
+    <li><code>type</code> kiểu dữ liệu nhập vào</li>
+    <li><code>name</code> giá trị để sau này liên kết với server</li>
+    <li><code>value</code> giá trị mặc định ban đầu</li>
+    <li><code>placeholder</code> giá trị mặc định được ẩn dưới khung</li>
+</ul></p>
+<form action="" methor="">
+    <p>Tài khoản: 
+        <input type="text" name="email" value="" placeholder="vui lòng đăng nhập email hoặc sđt">
+    </p>
+    <p>Mật khẩu:
+        <input type="password" name="password" id="" placeholder="vui lòng đăng nhập mật khẩu">
+    </p>
+    <p>Giới tính:
+        <input type="radio" name="gender" value="male" checked>Nam
+        <input type="radio" name="gender" value="female">Nữ
+        <ul> 
+            <li>Lưu ý: name của nam và nữ bắt buộc phải giống nhau</li>
+            <li><code>checked</code> chọn trước cho chúng ta mặc định 1 giá trị</li></ul>
+    </p>
+    <p>Ngày sinh:
+        <input type="date" name="date" id=""><br>
+    </p>
+    <p>Ngoài ra còn có
+        <select name="day" id="">
+            <option value="">ngày</option>
+            <option value="1"></option>
+        </select>
+        <select name="mouth" id="">
+            <option value="">tháng</option>
+            <option value="1"></option>
+        </select>
+        <select name="year" id="">
+            <option value="">năm</option>
+        </select>
+    <p>Ghi chú</p>
+        <textarea name="" id="" cols="100" rows="10"></textarea>
+    </p>
+    <p>Ngôn ngữ</p>
+    <input type="checkbox" name="a" id="" value="eng">Tiếng anh
+    <input type="checkbox" name="b" id="" value="viet">Tiếng việt
+    <p>Chú ý các thẻ quan trọng: <code>submit button reset</code></p>
+    <input type="reset" value="xóa">
+    <input type="submit" value="xác nhận">
+    <input type="button" value="gửi dữ liệu">
+</form>
+</body>
+</html>

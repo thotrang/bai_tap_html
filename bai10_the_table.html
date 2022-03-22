@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <body>
+     <a href="#1">cấu trúc</a> <br>
+     <a href="#2">các loại thẻ cần dùng</a> <br>
+     <a href="#3">các thuộc tính thường dùng</a> <br>
+     <a href="#4">gộp ô theo chiều ngang</a> <br>
+     <a href="#5">gộp ô theo chiều dọc</a>
+
+     <h3>cấu trúc</h3>
+    <p id="1">Sử dụng table t sử dụng 2 thẻ chí<nh:ul>
+        <li><body>thead</body> chỉ tiêu đề của bảng</li>
+        <li><body>tbody</body> chỉ nội dung của bảng</li>
+    </nh:ul></p>
+
+    <h3>các loại thẻ sử dụng</h3>
+    <p id="2">Thông thường, để tạo được một cái bảng thì chúng ta cần phải sử dụng bốn loại thẻ:
+        <ul><li>Thẻ <code>table</code> dùng để xác định một cái bảng.</li>
+        <li>Thẻ <code>tr</code> dùng để xác định một hàng bên trong bảng.</li>
+        <li>Thẻ <code>th</code> dùng để xác định một ô (tiêu đề) bên trong hàng.</li>
+        <li>Thẻ <code>td</code> dùng để xác định một ô (bình thường) bên trong hàng.</li>
+        </ul>
+    </p> 
+
+    <h3>các thuộc tính thường dùng</h3>
+    <p id="3">các thuộc tính của table: <ul>
+        <li>border: Thiết lập độ dày của cái đường viền bao xung quanh bảng và các ô.</li>
+        <li>cellspacing: Thiết lập khoảng cách nằm giữa mỗi hai đường viền lân cận.</li>
+        <li>cellpadding: Thiết lập khoảng cách vùng đệm bên trong các ô.</li>
+        <li>bgcolor: Thiết lập màu nền cho bảng hoặc các ô.</li>
+        <li>width: Thiết lập chiều rộng cho bảng hoặc các ô.</li>
+        <li>height: Thiết lập chiều cao cho bảng hoặc các ô.</li>
+        <li>align: Canh lề cho nội dung bên trong ô (theo chiều ngang)</li>
+        <li>valign: Canh lề cho nội dung bên trong ô (theo chiều dọc)</li>
+        <li>bgcolor: Thiết lập màu nền cho bảng hoặc các ô.</li>
+    </ul></p>
+
+    <table border="1" width="auto" height="auto" cellspacing="auto" align="bottom">
+    <thead>
+        <tr>
+            <th>họ và tên</th>
+            <th>ngày sinh</th>
+            <th>địa chỉ</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>nguyễn anh tuân</td>
+            <td>23/12/2000</td>
+            <td>Hải Dương</td>
+        </tr>
+        <tr>
+            <td>vũ thị hoài</td>
+            <td>25/9/1981</td>
+            <td>Hải Dương</td>
+        </tr>
+        <tr>
+            <td>nguyễn nhật long</td>
+            <td>16/10/2006</td>
+            <td>Hải Dương</td>
+        </tr>
+        <tr>
+            <td>nguyễn văn thính</td>
+            <td>1/3/1975</td>
+            <td>Hải Dương</td>
+        </tr>
+    </tbody></table>
+
+    <h3 id="4">Gộp ô theo chiều ngang</h3>
+    <p>Để gộp các ô theo chiều ngang thì chúng ta đặt thuộc tính <code>colspan</code> vào bên trong
+         thẻ mở của cái ô mà ta muốn bắt đầu gộp nó với những ô nằm phía bên phải.</p>
+
+    <h3 id="5">Gộp ô theo chiều dọc</h3>
+    <p>Để gộp các ô theo chiều dọc thì chúng ta đặt thuộc tính <code>rowspan</code> vào bên trong
+         thẻ mở của cái ô mà ta muốn bắt đầu gộp nó với những ô nằm phía dưới</p>
+
+    <h3 id="6">TIêu đề cho bảng</h3>
+    <p>Đặt tiêu đề cho bảng ta dùng thẻ <code>caption align</code>. Trong đó: <ul>
+        <li><code>bottom</code> cho tiêu đề phía dưới</li>
+        <li><code>top</code> cho tiêu đề lên trên</li>
+    </ul></p>
+     <table border="1">
+         <caption lign="top">DANH SÁCH SINH VIÊN</caption>
+         <tr>
+             <th colspan="6">Danh sách sinh viên</th>
+         </tr>
+         <tr>
+             <th rowspan="2">họ và tên</th>
+             <th rowspan="2">ngày sinh</th>
+             <th rowspan="2">địa chỉ</th>
+             <th colspan="3">điểm thi</th>
+         </tr>
+
+         <tr>
+             <th>toán</th>
+             <th>lí</th>
+             <th>hóa</th>
+         </tr>
+         <tr>
+             <td>nguyễn anh tuân</td>
+             <td>23/12/2000</td>
+             <td>hải dương</td>
+             <td>9</td>
+             <td>9</td>
+             <td>9</td>
+         </tr>
+     </table>    
+</body>
+</html>
